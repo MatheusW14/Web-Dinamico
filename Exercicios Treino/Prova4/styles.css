@@ -1,0 +1,217 @@
+/* =================================================== */
+/* ESTILOS BASE (MOBILE FIRST) - (Telas < 650px)      */
+/* =================================================== */
+/* Aqui definimos o layout mais simples: tudo empilhado. */
+
+.container {
+    /* Em vez de 500px fixo, fazemos ser fluido: */
+    width: 90%; 
+    max-width: 500px; /* Agora ele se adapta bem até 500px */
+    margin: 20px auto; /* Centraliza o container */
+    
+    height: 900px; /* Mantido do seu original */
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    border: 2px solid black; /* Apenas para visualizar o container */
+}
+
+.containercima {
+    width: 100%;
+    height: 30%; /* Ajustado para 30% como base */
+    background-color: yellow; /* Fundo amarelo base */
+    display: flex;
+    flex-direction: column; /* Empilhado no mobile */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.retangulorosaesquerda {
+    width: 100%;
+    height: 60%;
+    background-color: fuchsia;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.retangulolaranjaclaro {
+    width: 90%;
+    height: 60%;
+    background-color: darkorange;
+}
+
+.retangulorosadireita {
+    width: 100%;
+    height: 35%;
+    background-color: fuchsia;
+    display: flex;
+    flex-direction: row; /* Blocos azuis lado a lado */
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.retanguloazul {
+    width: 30%;
+    height: 40%;
+    background-color: rgb(19, 223, 223);
+}
+
+.containermeio {
+    width: 100%;
+    height: 10%; /* Ajustado para 10% */
+    background-color: red;
+    display: flex;
+    flex-direction: column; /* Empilhado no mobile */
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+.retangulovermelhoesquerda, .retangulovermelhodireita {
+    /* Escondemos os pais, mostramos os filhos */
+    width: 90%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.retangulovermelhoesquerda {
+     background-color: transparent; /* Pai fica transparente */
+}
+
+.retangulovermelhodireita {
+     background-color: transparent; /* Pai fica transparente */
+}
+
+.retanguloazulescuro {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.retanguloverde {
+    width: 100%;
+    height: 100%;
+    background-color: chartreuse;
+}
+
+
+.containerbaixo {
+    width: 100%;
+    height: 50%; /* Ocupa o espaço restante */
+    background-color: yellow;
+    display: flex;
+    flex-direction: column; /* Empilhado no mobile */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    overflow-y: auto; /* Permite rolar se tiver muitos blocos */
+}
+
+.retangulolaranjaescuro {
+    width: 90%;
+    height: 150px; /* Altura fixa no mobile */
+    background-color: darkorange;
+    display: flex;
+    align-items: end; /* Alinha o marrom embaixo */
+}
+
+.retangulomarrom {
+    width: 100%;
+    height: 12%;
+    background-color: brown;
+}
+
+
+/* =================================================== */
+/* ESTILOS DESKTOP (Telas >= 650px)                   */
+/* =================================================== */
+/* Agora, SÓ ADICIONAMOS o que muda para telas maiores */
+
+@media (min-width: 650px) {
+
+    .container {
+        max-width: 900px; /* Apenas mudamos o limite máximo */
+    }
+
+    .containercima {
+        flex-direction: row; /* De "column" para "row" */
+        height: 30%;
+        gap: 0; /* Removemos o gap para usar as larguras exatas */
+        padding: 0;
+    }
+
+    .retangulorosaesquerda {
+        width: 60%;
+        height: 90%;
+    }
+
+    .retangulorosadireita {
+        width: 35%;
+        height: 90%;
+        flex-direction: column; /* Blocos azuis empilhados */
+        gap: 20px;
+        align-items: end; /* Alinhado à direita */
+        padding: 20px;
+    }
+
+    .retanguloazul {
+        width: 30%;
+        height: 14%; /* Altura original */
+    }
+
+    .containermeio {
+        flex-direction: row; /* De "column" para "row" */
+        height: 7%;
+        padding: 0;
+        gap: 0;
+    }
+
+    .retangulovermelhoesquerda {
+        width: 64.5%;
+        height: 100%;
+        background-color: red; /* Cor volta para o pai */
+        gap: 30px;
+    }
+    
+    .retanguloazulescuro {
+        width: 24%;
+        height: 50%;
+    }
+
+    .retangulovermelhodireita {
+        width: 35.5%;
+        height: 100%;
+        background-color: red; /* Cor volta para o pai */
+        justify-content: end;
+        padding-right: 15px;
+    }
+    
+    .retanguloverde {
+        width: 28%;
+        height: 50%;
+    }
+
+    .containerbaixo {
+        flex-direction: row; /* De "column" para "row" */
+        gap: 30px;
+        padding-top: 20px;
+        height: 50%;
+        overflow: hidden; /* Remove a rolagem */
+    }
+
+    .retangulolaranjaescuro {
+        width: 400px; /* Tamanho fixo do desktop */
+        height: 230px;
+    }
+}

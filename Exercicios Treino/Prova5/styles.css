@@ -1,0 +1,255 @@
+@media (max-width: 599px) {
+    .container {
+        width: 90%;
+        max-width: 450px;
+        height: 900px;
+        margin: 20px auto;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container .topo {
+        width: 80%;
+        height: 20%;
+        margin-top: 50px;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .topo .retangulo-branco{
+        width: 80%;
+        height: 30%;
+        background-color: white;
+    }
+
+    .container .meio1{
+        width: 80%;
+        height: 15%;
+        background-color: gray;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .container .meio1 .retangulo-verde1{
+        width: 100%;
+        height: 100%;
+        background-color: green;
+    }
+    .container .meio2-1{
+        width: 80%;
+        height: 3.2%;
+        background-color: grey;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        
+    }
+    .container .meio2-1 .retangulo-verde2{
+        width: 30%;
+        height: 100%;
+        background-color: green;
+    }
+    .container .baixo-1{
+        width: 80%;
+        height: 40%;
+        background-color: rgb(255, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        
+    }
+    .container .baixo-1 .retangulo-amarelo{
+        width: 95%;
+        height: 10%;
+        background-color: yellow;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 600px){
+    .container {
+        width: 800px;
+        height: 800px;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .topo {
+        width: 100%;
+        height: 15%;
+        background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .container .topo .topo-esquerda{
+        width: 120%;
+        height: 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+
+    }
+    .container .topo .topo-direita{
+        width: 70%;
+        height: 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: 40px;
+        gap: 10px;
+    }
+    .container .topo .topo-esquerda .retangulo-branco{
+        width: 100%;
+        height: 20%;
+        background-color: white;
+    }
+    .container .topo .topo-direita .retangulo-verde-pequeno{
+        width: 30%;
+        height: 25%;
+        background-color: green;
+    }
+    .container .meio1{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        margin-top: 30px;
+        
+    }
+    .container .meio1 .retangulo-verde1{
+        width: 30%;
+        height: 30%;
+        background-color: green;
+    }
+    .container .meio2-2{
+        width: 90%;
+        height: 26%;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+    }   
+       
+    .container .meio2-2 .retangulo-vermelho{
+        width: 30%;
+        height: 100%;
+        background-color: red;
+    }
+    .container .baixo-2{
+        width: 90%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        margin-top: 10px;
+    }
+    .container .baixo-2 .retangulo-amarelo2{
+        width: 30%;
+        height: 10%;
+        background-color: yellow;
+    }
+}   
+@media (min-width: 1400px){
+    .container {
+        width: 1400px;
+        height: 900px;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .topo {
+        width: 100%;
+        height: 15%;
+        background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .container .topo .topo-esquerda{
+        width: 120%;
+        height: 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+
+    }
+    .container .topo .topo-direita{
+        width: 70%;
+        height: 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: 40px;
+        gap: 10px;
+    }
+    .container .topo .topo-esquerda .retangulo-branco{
+        width: 80%;
+        height: 20%;
+        background-color: white;
+    }
+    .container .topo .topo-direita .retangulo-verde-pequeno{
+        width: 30%;
+        height: 25%;
+        background-color: green;
+    }
+    .container .meio1{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        margin-top: 30px;
+        
+    }
+    .container .meio1 .retangulo-verde1{
+        width: 30%;
+        height: 30%;
+        background-color: green;
+    }
+    .container .meio2-2{
+        width: 90%;
+        height: 26%;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+    }   
+       
+    .container .meio2-2 .retangulo-vermelho{
+        width: 30%;
+        height: 100%;
+        background-color: red;
+    }
+    .container .baixo-2{
+        width: 90%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        margin-top: 10px;
+    }
+    .container .baixo-2 .retangulo-amarelo2{
+        width: 30%;
+        height: 10%;
+        background-color: yellow;
+    }
+}
